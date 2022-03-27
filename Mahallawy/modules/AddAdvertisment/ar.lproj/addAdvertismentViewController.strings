@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "تسجيل"; ObjectID = "9Y3-6f-zml"; */
+"9Y3-6f-zml.normalTitle" = "تسجيل";
+
+/* Class = "UITextField"; placeholder = "اسم المنتج"; ObjectID = "GX5-sm-X0v"; */
+"GX5-sm-X0v.placeholder" = "اسم المنتج";
+
+/* Class = "UILabel"; text = "أضافة اعلان"; ObjectID = "Rjd-xa-7bN"; */
+"Rjd-xa-7bN.text" = "أضافة اعلان";
+
+/* Class = "UITextField"; placeholder = "اسم المنتج"; ObjectID = "XdB-d2-20c"; */
+"XdB-d2-20c.placeholder" = "اسم المنتج";
+
+/* Class = "UITextField"; placeholder = "وصف المنتج"; ObjectID = "hvx-Eg-EUH"; */
+"hvx-Eg-EUH.placeholder" = "وصف المنتج";
+
+/* Class = "UILabel"; text = "ماركت / معارض"; ObjectID = "lUF-Tv-UBA"; */
+"lUF-Tv-UBA.text" = "ماركت / معارض";
+
+/* Class = "UILabel"; text = "اختر صورة وحدة علي الاقل للمنتج "; ObjectID = "veD-T4-u4m"; */
+"veD-T4-u4m.text" = "اختر صورة وحدة علي الاقل للمنتج ";

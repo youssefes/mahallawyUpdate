@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  Mahallawy
+
+  Created by jooo on 6/21/21.
+  Copyright © 2021 youssef. All rights reserved.
+*/
+NSAppleMusicUsageDescription = "السماح للتطبيق للوصول للصور لاختيار صور الاعلان الخاص بك";
+NSLocationAlwaysAndWhenInUseUsageDescription = "السماح للتطبيق للوصول لموقعك لتحديد مكان الاعلان الخاص بك ليسهل الوصول اليك ولخدماتك";
+NSLocationWhenInUseUsageDescription = "السماح للتطبيق للوصول لموقعك لتحديد مكان الاعلان الخاص بك ليسهل الوصول اليك ولخدماتك";
+NSPhotoLibraryUsageDescription = "السماح للتطبيق للوصول للصور لاختيار صور الاعلان الخاص بك";
+NSCameraUsageDescription = "السماح للتطبيق للوصول للصور لاختيار صور الاعلان الخاص بك";

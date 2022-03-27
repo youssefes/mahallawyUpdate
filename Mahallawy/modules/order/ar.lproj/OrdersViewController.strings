@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Finished"; ObjectID = "B31-2r-HC0"; */
+"B31-2r-HC0.normalTitle" = "منتهية";
+
+/* Class = "UILabel"; text = "There are no requests yet. Hurry up \nand book your trainer"; ObjectID = "Lpo-Ie-gUM"; */
+"Lpo-Ie-gUM.text" = "لا توجد طلبات حتي الان";
+
+/* Class = "UIButton"; normalTitle = "Book now"; ObjectID = "avA-Ss-WZD"; */
+"avA-Ss-WZD.normalTitle" = "احجز الان";
+
+/* Class = "UILabel"; text = "Orders"; ObjectID = "nzp-Ne-b7X"; */
+"nzp-Ne-b7X.text" = "الطلبات";
+
+/* Class = "UIButton"; normalTitle = "Active"; ObjectID = "pQW-Xl-wQM"; */
+"pQW-Xl-wQM.normalTitle" = "فعالة";
+
+/* Class = "UIButton"; normalTitle = "New"; ObjectID = "sCQ-sw-UYr"; */
+"sCQ-sw-UYr.normalTitle" = "جديدة";

@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "تقيم"; ObjectID = "1dj-fv-52A"; */
+"1dj-fv-52A.normalTitle" = "تقيم";
+
+/* Class = "UIButton"; normalTitle = "المزيد من اعلانات "; ObjectID = "2mK-WX-eQk"; */
+"2mK-WX-eQk.normalTitle" = "المزيد من اعلانات ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "51s-8l-L9i"; */
+"51s-8l-L9i.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8oy-eW-ocR"; */
+"8oy-eW-ocR.text" = "Label";
+
+/* Class = "UILabel"; text = " هل تود حذف الاعلان بالفعل"; ObjectID = "92v-rb-hm4"; */
+"92v-rb-hm4.text" = " هل تود حذف الاعلان بالفعل";
+
+/* Class = "UILabel"; text = "اضف تقيمك"; ObjectID = "G0I-dw-CSR"; */
+"G0I-dw-CSR.text" = "اضف تقيمك";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NbL-5S-6ro"; */
+"NbL-5S-6ro.text" = "Label";
+
+/* Class = "UILabel"; text = "تقيم المحل"; ObjectID = "Qv9-YF-K2Y"; */
+"Qv9-YF-K2Y.text" = "تقيم المحل";
+
+/* Class = "UIButton"; normalTitle = "نعم"; ObjectID = "Vvn-SI-IVJ"; */
+"Vvn-SI-IVJ.normalTitle" = "نعم";
+
+/* Class = "UILabel"; text = "حذف الاعلان الخاص بك"; ObjectID = "Y3Z-hb-onB"; */
+"Y3Z-hb-onB.text" = "حذف الاعلان الخاص بك";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bfc-kN-V9M"; */
+"bfc-kN-V9M.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "تراجع"; ObjectID = "cuu-kI-bbY"; */
+"cuu-kI-bbY.normalTitle" = "تراجع";
+
+/* Class = "UIButton"; normalTitle = "(اضف تقيمك)"; ObjectID = "muE-nB-3k4"; */
+"muE-nB-3k4.normalTitle" = "(اضف تقيمك)";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oLR-Jl-vc1"; */
+"oLR-Jl-vc1.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wmP-nM-Zsp"; */
+"wmP-nM-Zsp.text" = "Label";

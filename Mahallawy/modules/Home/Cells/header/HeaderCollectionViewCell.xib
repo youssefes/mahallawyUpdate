@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HeaderCollectionViewCell" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nSo-yI-f7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="252" height="215"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tgG-2g-dAW">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mcr-pr-6BT">
+                        <rect key="frame" x="20" y="155" width="212" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="B0n-d5-tFO"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="currentPageIndicatorTintColor" red="0.42352941179999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wM6-yE-QZX">
+                        <rect key="frame" x="8" y="225" width="236" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2M-5I-Ezt" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="5" y="5" width="226" height="30"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="forceScrolling" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-Eu-LRK">
+                                <rect key="frame" x="5" y="5" width="226" height="30"/>
+                                <connections>
+                                    <action selector="openAddvertismemt:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zgA-vG-sUR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x2M-5I-Ezt" firstAttribute="top" secondItem="wM6-yE-QZX" secondAttribute="top" constant="5" id="5a1-wH-sQP"/>
+                            <constraint firstAttribute="bottom" secondItem="x2M-5I-Ezt" secondAttribute="bottom" constant="5" id="E04-tY-kir"/>
+                            <constraint firstAttribute="trailing" secondItem="x2M-5I-Ezt" secondAttribute="trailing" constant="5" id="LFQ-Kl-doV"/>
+                            <constraint firstItem="s4h-Eu-LRK" firstAttribute="trailing" secondItem="x2M-5I-Ezt" secondAttribute="trailing" id="UnJ-fN-yEN"/>
+                            <constraint firstAttribute="height" constant="40" id="Vkg-pf-aVx"/>
+                            <constraint firstItem="x2M-5I-Ezt" firstAttribute="leading" secondItem="wM6-yE-QZX" secondAttribute="leading" constant="5" id="XfK-5M-lOk"/>
+                            <constraint firstItem="s4h-Eu-LRK" firstAttribute="bottom" secondItem="x2M-5I-Ezt" secondAttribute="bottom" id="aVM-Mq-Sqm"/>
+                            <constraint firstItem="s4h-Eu-LRK" firstAttribute="top" secondItem="x2M-5I-Ezt" secondAttribute="top" id="m9m-Ub-Uxx"/>
+                            <constraint firstItem="s4h-Eu-LRK" firstAttribute="leading" secondItem="x2M-5I-Ezt" secondAttribute="leading" id="otZ-lC-3LW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wM6-yE-QZX" secondAttribute="trailing" constant="8" id="FnJ-WY-3p1"/>
+                <constraint firstItem="nSo-yI-f7Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fom-X4-cLP"/>
+                <constraint firstItem="nSo-yI-f7Y" firstAttribute="bottom" secondItem="Mcr-pr-6BT" secondAttribute="bottom" constant="20" id="LMd-1F-Rab"/>
+                <constraint firstItem="Mcr-pr-6BT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="OAY-st-ZfC"/>
+                <constraint firstItem="nSo-yI-f7Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QRA-vc-ePq"/>
+                <constraint firstItem="wM6-yE-QZX" firstAttribute="top" secondItem="nSo-yI-f7Y" secondAttribute="bottom" constant="10" id="bxM-Ue-Xwk"/>
+                <constraint firstAttribute="trailing" secondItem="Mcr-pr-6BT" secondAttribute="trailing" constant="20" id="f6z-wK-hwk"/>
+                <constraint firstAttribute="trailing" secondItem="nSo-yI-f7Y" secondAttribute="trailing" id="l4a-Bh-vmL"/>
+                <constraint firstAttribute="bottom" secondItem="wM6-yE-QZX" secondAttribute="bottom" constant="10" id="oc6-EF-b5K"/>
+                <constraint firstItem="wM6-yE-QZX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="reV-lV-7gy"/>
+            </constraints>
+            <size key="customSize" width="252" height="275"/>
+            <connections>
+                <outlet property="paginagtionController" destination="Mcr-pr-6BT" id="Fdj-OS-XNo"/>
+                <outlet property="sliderCollectionView" destination="nSo-yI-f7Y" id="I4X-yG-Vmg"/>
+                <outlet property="sliderLbl" destination="x2M-5I-Ezt" id="1Vb-gp-Gu4"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="-25"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="x2M-5I-Ezt"/>
+    </designables>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.50999999046325684" green="0.14499999582767487" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

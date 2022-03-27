@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BahijJanna-Regular.ttf">
+            <string>BahijJanna</string>
+        </array>
+        <array key="Cairo-Light.ttf">
+            <string>Cairo-Light</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContectUsViewController" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <connections>
+                <outlet property="fullNameTf" destination="DWT-FH-q0L" id="TYQ-sZ-rrg"/>
+                <outlet property="loadingView" destination="hh0-1u-UO4" id="2h1-9T-3gq"/>
+                <outlet property="massageTV" destination="NOi-d5-wtB" id="sj7-Fy-G3f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whatsAppBtn" destination="Ep7-3H-fhd" id="040-Az-0oe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-5Z-gSu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="support@mahalawy.com - sales@mahalawy.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-8b-YUv">
+                    <rect key="frame" x="20" y="812" width="374" height="30"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4O-e1-ozJ">
+                    <rect key="frame" x="20" y="584.5" width="171.5" height="45"/>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="17"/>
+                    <state key="normal" title="ارسال">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendBtn:" destination="-1" eventType="touchUpInside" id="5Vx-sZ-ste"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الواتساب" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-3H-fhd">
+                    <rect key="frame" x="20" y="235.5" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RJy-ad-Ndw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-fM-589">
+                    <rect key="frame" x="20" y="115.5" width="374" height="45"/>
+                    <attributedString key="attributedText">
+                        <fragment content="يمكنك">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="ايضا">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="التواصل">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="معنا">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="مباشرة">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="عبر">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="واتساب">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" size="16" name="GeezaPro"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="01289594956 - 01064290486 ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يسعدنا ❤️ مساعدتك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-N7-8uf">
+                    <rect key="frame" x="20" y="54" width="374" height="41.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم بالكامل" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWT-FH-q0L">
+                    <rect key="frame" x="20" y="180.5" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xjh-dd-idR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zA7-Va-FkS">
+                    <rect key="frame" x="222.5" y="584.5" width="171.5" height="45"/>
+                    <color key="backgroundColor" red="0.08235294118" green="0.47843137250000001" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="QDJ-qB-sef"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="ارسال مباشرة عبر واتساب">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="SendTowhatsAppBtn:" destination="-1" eventType="touchUpInside" id="QUJ-MZ-yjz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="او" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1L-p4-Fm4">
+                    <rect key="frame" x="201.5" y="594" width="11" height="26"/>
+                    <fontDescription key="fontDescription" name="BahijJanna" family="Bahij Janna" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NOi-d5-wtB">
+                    <rect key="frame" x="20" y="295.5" width="374" height="269"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="الرسالة"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-1u-UO4" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="157" y="649.5" width="100" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RsW-Pz-ynp"/>
+                        <constraint firstAttribute="width" constant="100" id="We4-MA-jAW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballPulse"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ep7-3H-fhd" firstAttribute="top" secondItem="DWT-FH-q0L" secondAttribute="bottom" constant="15" id="2W3-zP-bno"/>
+                <constraint firstItem="oaB-N7-8uf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="3AD-lO-DNK"/>
+                <constraint firstItem="r4O-e1-ozJ" firstAttribute="leading" secondItem="NOi-d5-wtB" secondAttribute="leading" id="3We-fe-OIX"/>
+                <constraint firstItem="zA7-Va-FkS" firstAttribute="top" secondItem="NOi-d5-wtB" secondAttribute="bottom" constant="20" id="3rY-5K-sie"/>
+                <constraint firstItem="NOi-d5-wtB" firstAttribute="top" secondItem="Ep7-3H-fhd" secondAttribute="bottom" constant="20" id="A3T-yP-NLB"/>
+                <constraint firstItem="NOi-d5-wtB" firstAttribute="height" secondItem="cY4-5Z-gSu" secondAttribute="height" multiplier="0.3" id="Aej-Xr-hMN"/>
+                <constraint firstItem="wVS-fM-589" firstAttribute="top" secondItem="oaB-N7-8uf" secondAttribute="bottom" constant="20" id="Cip-gu-hOA"/>
+                <constraint firstItem="zA7-Va-FkS" firstAttribute="leading" secondItem="U1L-p4-Fm4" secondAttribute="trailing" constant="10" id="EzQ-KQ-K3m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c1K-8b-YUv" secondAttribute="bottom" constant="20" id="FBF-Ld-yeJ"/>
+                <constraint firstItem="oaB-N7-8uf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MdY-4E-uUa"/>
+                <constraint firstItem="U1L-p4-Fm4" firstAttribute="centerY" secondItem="zA7-Va-FkS" secondAttribute="centerY" id="NcL-Ek-xRh"/>
+                <constraint firstItem="c1K-8b-YUv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="P8A-kB-CmA"/>
+                <constraint firstItem="NOi-d5-wtB" firstAttribute="trailing" secondItem="Ep7-3H-fhd" secondAttribute="trailing" id="PGU-2a-xcM"/>
+                <constraint firstItem="DWT-FH-q0L" firstAttribute="top" secondItem="wVS-fM-589" secondAttribute="bottom" constant="20" id="U94-hx-vky"/>
+                <constraint firstItem="U1L-p4-Fm4" firstAttribute="leading" secondItem="r4O-e1-ozJ" secondAttribute="trailing" constant="10" id="UWh-IG-gSo"/>
+                <constraint firstItem="hh0-1u-UO4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wco-81-LDd"/>
+                <constraint firstItem="Ep7-3H-fhd" firstAttribute="leading" secondItem="DWT-FH-q0L" secondAttribute="leading" id="Z65-Wr-Hee"/>
+                <constraint firstItem="cY4-5Z-gSu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="a0r-rH-8u5"/>
+                <constraint firstItem="hh0-1u-UO4" firstAttribute="top" secondItem="r4O-e1-ozJ" secondAttribute="bottom" constant="20" id="cva-DI-PId"/>
+                <constraint firstItem="oaB-N7-8uf" firstAttribute="trailing" secondItem="wVS-fM-589" secondAttribute="trailing" id="dAC-m1-Qvl"/>
+                <constraint firstItem="cY4-5Z-gSu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eGp-aO-tOj"/>
+                <constraint firstItem="zA7-Va-FkS" firstAttribute="trailing" secondItem="NOi-d5-wtB" secondAttribute="trailing" id="ebO-Xw-9Ve"/>
+                <constraint firstItem="oaB-N7-8uf" firstAttribute="leading" secondItem="wVS-fM-589" secondAttribute="leading" id="fpr-lM-46w"/>
+                <constraint firstAttribute="bottom" secondItem="cY4-5Z-gSu" secondAttribute="bottom" id="gj3-Rx-Oea"/>
+                <constraint firstItem="U1L-p4-Fm4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hQM-GG-XQn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oaB-N7-8uf" secondAttribute="trailing" constant="20" id="iTZ-A8-SXY"/>
+                <constraint firstItem="r4O-e1-ozJ" firstAttribute="centerY" secondItem="zA7-Va-FkS" secondAttribute="centerY" id="jgt-hJ-bYG"/>
+                <constraint firstItem="NOi-d5-wtB" firstAttribute="leading" secondItem="Ep7-3H-fhd" secondAttribute="leading" id="l94-Bz-1ep"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c1K-8b-YUv" secondAttribute="trailing" constant="20" id="lFO-H7-vag"/>
+                <constraint firstItem="cY4-5Z-gSu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nXH-do-YgY"/>
+                <constraint firstItem="r4O-e1-ozJ" firstAttribute="height" secondItem="zA7-Va-FkS" secondAttribute="height" id="pkJ-eI-OQM"/>
+                <constraint firstItem="DWT-FH-q0L" firstAttribute="leading" secondItem="wVS-fM-589" secondAttribute="leading" id="seP-Sv-mAH"/>
+                <constraint firstItem="Ep7-3H-fhd" firstAttribute="trailing" secondItem="DWT-FH-q0L" secondAttribute="trailing" id="tUE-ju-IjE"/>
+                <constraint firstItem="DWT-FH-q0L" firstAttribute="trailing" secondItem="wVS-fM-589" secondAttribute="trailing" id="y19-Bg-W65"/>
+            </constraints>
+            <point key="canvasLocation" x="233" y="510"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg_2" width="720" height="1280"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobsVc" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerView" destination="YzN-6o-2eT" id="zBR-Sp-7qU"/>
+                <outlet property="jobsTableView" destination="dZd-Vz-OkE" id="ntG-KP-PxW"/>
+                <outlet property="loadingView" destination="ghv-tO-jFI" id="kTi-yh-z5x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dZd-Vz-OkE">
+                    <rect key="frame" x="10" y="154" width="394" height="708"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzN-6o-2eT" customClass="GADBannerView">
+                    <rect key="frame" x="10" y="54" width="394" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="MoG-Lb-KBk">
+                            <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghv-tO-jFI" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="182" y="375" width="100" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="LiC-Wg-CP4"/>
+                        <constraint firstAttribute="height" constant="40" id="bjE-rF-Ub2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballPulse"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.42352941179999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-q2-Clg">
+                    <rect key="frame" x="20" y="792" width="50" height="50"/>
+                    <color key="backgroundColor" name="MainColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gs2-pT-QyB"/>
+                        <constraint firstAttribute="width" constant="50" id="pOc-Mw-LZt"/>
+                    </constraints>
+                    <state key="normal" image="add">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addJobs:" destination="-1" eventType="touchUpInside" id="Kp3-Bb-slr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dZd-Vz-OkE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="9Dg-ae-OuU"/>
+                <constraint firstItem="dZd-Vz-OkE" firstAttribute="top" secondItem="YzN-6o-2eT" secondAttribute="bottom" id="9jb-Yg-zqE"/>
+                <constraint firstItem="YzN-6o-2eT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="B69-Ed-9gW"/>
+                <constraint firstItem="Knw-q2-Clg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Elx-6C-oim"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dZd-Vz-OkE" secondAttribute="bottom" id="Zno-bU-u2n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dZd-Vz-OkE" secondAttribute="trailing" constant="10" id="m2G-P5-Oqr"/>
+                <constraint firstItem="Knw-q2-Clg" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="oE4-cR-2IG"/>
+                <constraint firstItem="YzN-6o-2eT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="opN-cp-ZPb"/>
+                <constraint firstItem="ghv-tO-jFI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vTR-sW-zp9"/>
+                <constraint firstItem="ghv-tO-jFI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vwn-hI-Fj0"/>
+                <constraint firstItem="YzN-6o-2eT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="zB5-Pg-1ua"/>
+            </constraints>
+            <point key="canvasLocation" x="-2335" y="1013"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="22" height="22"/>
+        <namedColor name="MainColor">
+            <color red="0.50999999046325684" green="0.14499999582767487" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobDetailesVc" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <connections>
+                <outlet property="address" destination="tua-ZB-6ez" id="WP1-GG-x2A"/>
+                <outlet property="bannerView" destination="yty-YS-l3k" id="TOZ-cw-bqg"/>
+                <outlet property="descriptionOfJop" destination="kxM-ki-A50" id="1gk-LV-Prk"/>
+                <outlet property="loadingView" destination="b4Z-Rn-Czt" id="KPV-Wv-Ujt"/>
+                <outlet property="phoneOfOwner" destination="5Bn-TU-XX2" id="ZLE-N8-3P3"/>
+                <outlet property="price" destination="W70-vf-RHJ" id="bpS-iR-7s9"/>
+                <outlet property="publishBtn" destination="Dze-Tn-eNZ" id="cXb-hg-fbM"/>
+                <outlet property="reportBtn" destination="A3R-et-chq" id="acQ-LT-cuw"/>
+                <outlet property="titelOfJop" destination="Vlx-hD-0rC" id="A5c-Fp-cMh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="odH-nt-YcS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-mL-W7c">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHp-tX-lRy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="980"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xp0-WO-n5F">
+                                    <rect key="frame" x="10" y="10" width="394" height="960"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-yD-bHo">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="630"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MHI-pR-uEY">
+                                                    <rect key="frame" x="10" y="20" width="374" height="590"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نشر فرصة عمل جديدة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vlx-hD-0rC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="عنوان الوظيفة" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tua-ZB-6ez" customClass="TextField" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="60" width="374" height="56"/>
+                                                            <color key="backgroundColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="gqS-u7-pah"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kxM-ki-A50">
+                                                            <rect key="frame" x="0.0" y="136" width="374" height="150"/>
+                                                            <color key="backgroundColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="150" id="k0M-o7-0je">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="وصف الوظيفة (مواعيد العمل ,المكان ...الخ)"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.50326412671232879" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textView>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم التواصل مع صاحب الوظيفة" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Bn-TU-XX2" customClass="TextField" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="306" width="374" height="56"/>
+                                                            <color key="backgroundColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="jAB-Al-xww"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الحد الادني للمراتب في الشهر" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W70-vf-RHJ" customClass="TextField" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="382" width="374" height="56"/>
+                                                            <color key="backgroundColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="t73-Lz-YqM"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dze-Tn-eNZ">
+                                                            <rect key="frame" x="0.0" y="458" width="374" height="56"/>
+                                                            <color key="backgroundColor" red="0.42352941179999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="3mj-bY-Zfv"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                                            <state key="normal" title="نشر الوظيفة">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="publishBtn:" destination="-1" eventType="touchUpInside" id="9qS-Ec-69Y"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-Rn-Czt" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                                            <rect key="frame" x="0.0" y="534" width="374" height="56"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="QNJ-m6-SBp"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballPulse"/>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                                    <color key="value" name="MainColor"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="b4Z-Rn-Czt" firstAttribute="leading" secondItem="Dze-Tn-eNZ" secondAttribute="leading" id="JwC-a4-BtT"/>
+                                                        <constraint firstItem="b4Z-Rn-Czt" firstAttribute="trailing" secondItem="Dze-Tn-eNZ" secondAttribute="trailing" id="xsW-Z0-MCa"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="MHI-pR-uEY" secondAttribute="trailing" constant="10" id="5Rk-FX-ULh"/>
+                                                <constraint firstAttribute="bottom" secondItem="MHI-pR-uEY" secondAttribute="bottom" constant="20" id="Hql-OK-dUk"/>
+                                                <constraint firstItem="MHI-pR-uEY" firstAttribute="top" secondItem="dMz-yD-bHo" secondAttribute="top" constant="20" id="UI3-cE-kgm"/>
+                                                <constraint firstItem="MHI-pR-uEY" firstAttribute="leading" secondItem="dMz-yD-bHo" secondAttribute="leading" constant="10" id="t0W-7C-OJu"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-et-chq">
+                                            <rect key="frame" x="0.0" y="645" width="394" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="S0j-AV-Rbe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                            <state key="normal" title="الابلاغ عن عدم توفير الوظيفة">
+                                                <color key="titleColor" systemColor="systemRedColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="reportBtn:" destination="-1" eventType="touchUpInside" id="0te-yJ-7ia"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yty-YS-l3k" customClass="GADBannerView">
+                                            <rect key="frame" x="0.0" y="710" width="394" height="250"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="hoH-x5-w7t">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="350"/>
+                                                </constraint>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="xp0-WO-n5F" firstAttribute="top" secondItem="aHp-tX-lRy" secondAttribute="top" constant="10" id="5T3-2x-Lrz"/>
+                                <constraint firstAttribute="trailing" secondItem="xp0-WO-n5F" secondAttribute="trailing" constant="10" id="Amd-us-mvS"/>
+                                <constraint firstAttribute="bottom" secondItem="xp0-WO-n5F" secondAttribute="bottom" constant="10" id="AnH-r0-Feo"/>
+                                <constraint firstItem="xp0-WO-n5F" firstAttribute="leading" secondItem="aHp-tX-lRy" secondAttribute="leading" constant="10" id="jvC-t9-EPd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="aHp-tX-lRy" firstAttribute="top" secondItem="eLd-mL-W7c" secondAttribute="top" id="6P4-0h-ZFw"/>
+                        <constraint firstAttribute="bottom" secondItem="aHp-tX-lRy" secondAttribute="bottom" id="74Z-ar-1Aj"/>
+                        <constraint firstItem="aHp-tX-lRy" firstAttribute="leading" secondItem="veA-k8-v83" secondAttribute="leading" id="lKP-P4-AhY"/>
+                        <constraint firstItem="aHp-tX-lRy" firstAttribute="trailing" secondItem="eLd-mL-W7c" secondAttribute="trailing" id="sxk-Bv-pT7"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="qj5-w2-buU"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="veA-k8-v83"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="odH-nt-YcS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3tv-lO-VXK"/>
+                <constraint firstItem="eLd-mL-W7c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JU9-1e-Qwz"/>
+                <constraint firstItem="eLd-mL-W7c" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Jdj-Ej-miR"/>
+                <constraint firstItem="aHp-tX-lRy" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="Qkk-T2-GL4"/>
+                <constraint firstItem="odH-nt-YcS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Twd-nj-DyI"/>
+                <constraint firstItem="aHp-tX-lRy" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Vd2-ER-efA"/>
+                <constraint firstItem="eLd-mL-W7c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YVa-gX-Stu"/>
+                <constraint firstItem="odH-nt-YcS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="epe-l9-4cq"/>
+                <constraint firstAttribute="bottom" secondItem="odH-nt-YcS" secondAttribute="bottom" id="kLJ-MG-atf"/>
+                <constraint firstItem="eLd-mL-W7c" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zda-A1-Du4"/>
+            </constraints>
+            <point key="canvasLocation" x="-709" y="3"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5Bn-TU-XX2">
+            <size key="intrinsicContentSize" width="195" height="22.5"/>
+        </designable>
+        <designable name="W70-vf-RHJ">
+            <size key="intrinsicContentSize" width="189" height="22.5"/>
+        </designable>
+        <designable name="tua-ZB-6ez">
+            <size key="intrinsicContentSize" width="83" height="22.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="login_bg_2" width="720" height="1280"/>
+        <namedColor name="MainColor">
+            <color red="0.50999999046325684" green="0.14499999582767487" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

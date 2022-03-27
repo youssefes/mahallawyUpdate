@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "27 يناير 2021"; ObjectID = "04n-RG-eMU"; */
+"04n-RG-eMU.text" = "27 يناير 2021";
+
+/* Class = "UILabel"; text = "عنوان المحل :"; ObjectID = "1DZ-oC-eN3"; */
+"1DZ-oC-eN3.text" = "عنوان المحل :";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "2k4-mV-L87"; */
+"2k4-mV-L87.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "تم الطالب"; ObjectID = "5iq-AH-rSD"; */
+"5iq-AH-rSD.text" = "تم الطالب";
+
+/* Class = "UILabel"; text = "اسم المستخدام :"; ObjectID = "6en-Wm-Muu"; */
+"6en-Wm-Muu.text" = "اسم المستخدام :";
+
+/* Class = "UILabel"; text = "السعر الإجمالي : "; ObjectID = "7g0-ao-5b5"; */
+"7g0-ao-5b5.text" = "السعر الإجمالي : ";
+
+/* Class = "UIButton"; normalTitle = "قبول الطالب"; ObjectID = "FJo-Wg-kmn"; */
+"FJo-Wg-kmn.normalTitle" = "قبول الطالب";
+
+/* Class = "UILabel"; text = "الكمية :"; ObjectID = "FNr-W0-B60"; */
+"FNr-W0-B60.text" = "الكمية :";
+
+/* Class = "UILabel"; text = "رقم المحل"; ObjectID = "GWD-dp-Wam"; */
+"GWD-dp-Wam.text" = "رقم المحل";
+
+/* Class = "UILabel"; text = "رقم الهاتف:"; ObjectID = "KDr-B1-LAh"; */
+"KDr-B1-LAh.text" = "رقم الهاتف:";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "MpZ-IL-MTQ"; */
+"MpZ-IL-MTQ.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "رقم الهاتف للمستخدام:"; ObjectID = "PXz-YF-gji"; */
+"PXz-YF-gji.text" = "رقم الهاتف للمستخدام:";
+
+/* Class = "UILabel"; text = "نسبة التوصيل : "; ObjectID = "QLv-nZ-vbk"; */
+"QLv-nZ-vbk.text" = "نسبة التوصيل : ";
+
+/* Class = "UILabel"; text = "عدد المنتجات  :"; ObjectID = "R4a-qp-lOz"; */
+"R4a-qp-lOz.text" = "عدد المنتجات  :";
+
+/* Class = "UILabel"; text = "27 يناير 2021"; ObjectID = "cM7-Ab-1ns"; */
+"cM7-Ab-1ns.text" = "27 يناير 2021";
+
+/* Class = "UILabel"; text = "27 يناير 2021"; ObjectID = "cNc-px-if5"; */
+"cNc-px-if5.text" = "27 يناير 2021";
+
+/* Class = "UILabel"; text = "رقم الطلب :"; ObjectID = "e63-0n-S4h"; */
+"e63-0n-S4h.text" = "رقم الطلب :";
+
+/* Class = "UILabel"; text = "اسم المحل :"; ObjectID = "efP-vO-CvA"; */
+"efP-vO-CvA.text" = "اسم المحل :";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "lyM-DR-EVG"; */
+"lyM-DR-EVG.text" = "0";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "mQT-ng-MWx"; */
+"mQT-ng-MWx.text" = "6364643464346";
+
+/* Class = "UIButton"; normalTitle = "عرض المنتجات"; ObjectID = "nyy-KP-Bp5"; */
+"nyy-KP-Bp5.normalTitle" = "عرض المنتجات";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "pAC-qL-0jd"; */
+"pAC-qL-0jd.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "rC7-Gh-dIx"; */
+"rC7-Gh-dIx.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "sHx-an-gEh"; */
+"sHx-an-gEh.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "المنتجات : "; ObjectID = "sP6-k6-ywz"; */
+"sP6-k6-ywz.text" = "المنتجات : ";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "szM-Jk-VY0"; */
+"szM-Jk-VY0.text" = "6364643464346";
+
+/* Class = "UILabel"; text = "التاريخ :"; ObjectID = "vJO-0r-3d8"; */
+"vJO-0r-3d8.text" = "التاريخ :";
+
+/* Class = "UILabel"; text = "6364643464346"; ObjectID = "x0E-ZY-4A0"; */
+"x0E-ZY-4A0.text" = "6364643464346";

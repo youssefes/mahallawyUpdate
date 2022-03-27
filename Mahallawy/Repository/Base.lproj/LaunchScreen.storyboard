@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Light.ttf">
+            <string>Cairo-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogo" translatesAutoresizingMaskIntoConstraints="NO" id="fcj-0O-hIm">
+                                <rect key="frame" x="108.5" y="339" width="197" height="218"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تطبيق محلاوي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-Yy-1eT">
+                                <rect key="frame" x="162" y="577" width="90" height="21"/>
+                                <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هيسهل حياة كل محلاوي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-V1-3VK">
+                                <rect key="frame" x="131" y="608" width="152" height="21"/>
+                                <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KAc-V1-3VK" firstAttribute="centerX" secondItem="vvZ-Yy-1eT" secondAttribute="centerX" id="6ST-fG-FFR"/>
+                            <constraint firstItem="vvZ-Yy-1eT" firstAttribute="centerX" secondItem="fcj-0O-hIm" secondAttribute="centerX" id="F14-2c-UsX"/>
+                            <constraint firstItem="vvZ-Yy-1eT" firstAttribute="top" secondItem="fcj-0O-hIm" secondAttribute="bottom" constant="20" id="LNq-8p-kbc"/>
+                            <constraint firstItem="KAc-V1-3VK" firstAttribute="top" secondItem="vvZ-Yy-1eT" secondAttribute="bottom" constant="10" id="Zl0-pg-Zhl"/>
+                            <constraint firstItem="fcj-0O-hIm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lP1-Ry-JMN"/>
+                            <constraint firstItem="fcj-0O-hIm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mE8-G9-Anw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="186"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applogo" width="197" height="218"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+# For more information about this configuration visit
+# https://docs.fastlane.tools/actions/gym/#gymfile
+
+# In general, you can use the options available
+# fastlane gym --help
+
+# Remove the # in front of the line to enable the option
+ scheme("Mahallawy")
+ clean(true)
+ export_method("app-store")
+ export_xcargs("-allowProvisionUpdates")
+ output_name("Mahallawy")
+# sdk("iphoneos11.4")
+
+output_directory("./")

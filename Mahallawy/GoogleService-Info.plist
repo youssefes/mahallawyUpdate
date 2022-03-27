@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>32823062757-32t7qo34mdk8v204kgss94ii095bmn5p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.32823062757-32t7qo34mdk8v204kgss94ii095bmn5p</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>32823062757-f3em85e68b8pi73cdoujar307c6u6at5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3QsVWESW6V6zA-zNK5VrE4_jGB6dA-lU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>32823062757</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Mahallawy</string>
+	<key>PROJECT_ID</key>
+	<string>mahallawy-4a26e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mahallawy-4a26e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:32823062757:ios:65670b0f088e0d20d1e40c</string>
+	<key>DATABASE_URL</key>
+	<string>https://mahallawy-4a26e.firebaseio.com</string>
+</dict>
+</plist>

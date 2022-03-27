@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SliderCell" customModule="Mahallawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="242"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="242"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br9-PK-Omr">
+                        <rect key="frame" x="0.0" y="0.0" width="487" height="242"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.69999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="0.0" y="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-tZ-ahp">
+                        <rect key="frame" x="0.0" y="0.0" width="487" height="242"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="br9-PK-Omr" firstAttribute="leading" secondItem="ebj-tZ-ahp" secondAttribute="leading" id="82F-hn-yAe"/>
+                <constraint firstAttribute="bottom" secondItem="ebj-tZ-ahp" secondAttribute="bottom" id="ADk-vV-GVh"/>
+                <constraint firstItem="ebj-tZ-ahp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QpY-4T-xC3"/>
+                <constraint firstItem="br9-PK-Omr" firstAttribute="bottom" secondItem="ebj-tZ-ahp" secondAttribute="bottom" id="UgF-cf-EAo"/>
+                <constraint firstItem="ebj-tZ-ahp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="abP-Ap-3Pf"/>
+                <constraint firstItem="br9-PK-Omr" firstAttribute="top" secondItem="ebj-tZ-ahp" secondAttribute="top" id="gOe-IP-niQ"/>
+                <constraint firstAttribute="trailing" secondItem="ebj-tZ-ahp" secondAttribute="trailing" id="iIa-KD-nIW"/>
+                <constraint firstItem="br9-PK-Omr" firstAttribute="trailing" secondItem="ebj-tZ-ahp" secondAttribute="trailing" id="uuh-eh-CEB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="487" height="242"/>
+            <connections>
+                <outlet property="sliderImage" destination="ebj-tZ-ahp" id="JhT-0k-uNP"/>
+            </connections>
+            <point key="canvasLocation" x="325.36231884057975" y="124.55357142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="login_bg_2" width="720" height="1280"/>
+    </resources>
+</document>

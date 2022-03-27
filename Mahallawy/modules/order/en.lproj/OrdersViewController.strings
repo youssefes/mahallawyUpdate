@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Finished"; ObjectID = "B31-2r-HC0"; */
+"B31-2r-HC0.normalTitle" = "Finished";
+
+/* Class = "UILabel"; text = "لا توجد طلبات حتي الان"; ObjectID = "Lpo-Ie-gUM"; */
+"Lpo-Ie-gUM.text" = "لا توجد طلبات حتي الان";
+
+/* Class = "UIButton"; normalTitle = "Active"; ObjectID = "pQW-Xl-wQM"; */
+"pQW-Xl-wQM.normalTitle" = "Active";
+
+/* Class = "UIButton"; normalTitle = "New"; ObjectID = "sCQ-sw-UYr"; */
+"sCQ-sw-UYr.normalTitle" = "New";

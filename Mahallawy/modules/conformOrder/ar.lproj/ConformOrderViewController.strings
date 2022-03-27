@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "الاسم"; ObjectID = "7TU-bX-Vip"; */
+"7TU-bX-Vip.placeholder" = "الاسم";
+
+/* Class = "UILabel"; text = "الاسم"; ObjectID = "9B7-Sr-P0q"; */
+"9B7-Sr-P0q.text" = "الاسم";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "AY4-BB-1Th"; */
+"AY4-BB-1Th.placeholder" = "رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "تأكيد الطلب"; ObjectID = "Awf-OR-Q0m"; */
+"Awf-OR-Q0m.normalTitle" = "تأكيد الطلب";
+
+/* Class = "UILabel"; text = "العنوان"; ObjectID = "NhM-Ce-s0Y"; */
+"NhM-Ce-s0Y.text" = "العنوان";
+
+/* Class = "UITextField"; placeholder = "العنوان"; ObjectID = "cw1-sc-zaJ"; */
+"cw1-sc-zaJ.placeholder" = "العنوان";
+
+/* Class = "UILabel"; text = "رقم الجوال"; ObjectID = "h6m-G7-nEq"; */
+"h6m-G7-nEq.text" = "رقم الجوال";

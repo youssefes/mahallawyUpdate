@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "3rq-ho-nUd"; */
+"3rq-ho-nUd.normalTitle" = "قبول";
+
+/* Class = "UILabel"; text = "Finishing Service"; ObjectID = "RNg-4d-KnJ"; */
+"RNg-4d-KnJ.text" = "انهاء الخدمة";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "baI-VW-v7O"; */
+"baI-VW-v7O.normalTitle" = "الغاء";
+
+/* Class = "UILabel"; text = "Do you sure you want to accept  this service finishing?"; ObjectID = "nPb-RB-xu4"; */
+"nPb-RB-xu4.text" = "قد قدم الندرب طلب لإنهاء الخدمة هل انت متأكد من الموافقة علي انهاءها؟";

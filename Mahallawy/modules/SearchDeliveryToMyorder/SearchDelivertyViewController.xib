@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchDelivertyViewController" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <connections>
+                <outlet property="containerOfDeliveryDate" destination="Jkj-xd-sAz" id="5Mg-MQ-kHq"/>
+                <outlet property="imageOfDelivery" destination="nSY-Kg-L77" id="NNu-tq-EhE"/>
+                <outlet property="loadingActivityIndictore" destination="bAF-fb-woO" id="eqH-lh-Fpz"/>
+                <outlet property="lsearchImage" destination="J9A-1z-JDD" id="ljN-0D-rfd"/>
+                <outlet property="nameOfDelivery" destination="AMA-1I-QXU" id="ZZT-F1-IX7"/>
+                <outlet property="phoneOfDelivery" destination="Gvx-bh-8Ne" id="ekp-59-DrI"/>
+                <outlet property="statusOfOrderlbl" destination="DXP-k2-fTn" id="9ok-24-zst"/>
+                <outlet property="timerLbl" destination="Mbd-M4-2Yf" id="gEd-OP-wXU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-Zo-rDU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1j5-sm-zC5">
+                    <rect key="frame" x="20" y="230.5" width="374" height="435"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برجاء انتظار موافقة المندوب علي التوصيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-WB-tY8">
+                            <rect key="frame" x="74.5" y="20" width="225.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <color key="textColor" name="MainColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbd-M4-2Yf">
+                            <rect key="frame" x="164.5" y="54" width="45.5" height="21"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                            <color key="textColor" name="MainColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivery_man" translatesAutoresizingMaskIntoConstraints="NO" id="J9A-1z-JDD">
+                            <rect key="frame" x="144.5" y="95" width="85" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="K1p-T1-40G"/>
+                                <constraint firstAttribute="width" secondItem="J9A-1z-JDD" secondAttribute="height" id="Nvj-Ba-D34"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jkj-xd-sAz">
+                            <rect key="frame" x="105" y="200" width="164.5" height="55"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="youssef Mohammed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMA-1I-QXU">
+                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="3SU-4i-uJx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4z0-xn-f2X">
+                                    <rect key="frame" x="0.0" y="25" width="164.5" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h46-ht-bCt">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="a5J-Wg-a08"/>
+                                                <constraint firstAttribute="height" constant="30" id="fcg-kN-L7w"/>
+                                            </constraints>
+                                            <state key="normal" image="Component 633 – 1-1"/>
+                                            <connections>
+                                                <action selector="callBtn:" destination="-1" eventType="touchUpInside" id="nS8-JG-2Us"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvx-bh-8Ne">
+                                            <rect key="frame" x="35" y="0.0" width="129.5" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freepik--Character--inject-34" translatesAutoresizingMaskIntoConstraints="NO" id="nSY-Kg-L77">
+                            <rect key="frame" x="137" y="265" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="2yl-Pn-evs"/>
+                                <constraint firstAttribute="width" constant="100" id="HrN-rl-JLq"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="برجاء انتظار موافقة المندوب علي التوصيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-k2-fTn">
+                            <rect key="frame" x="20" y="385" width="334" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="wnQ-wY-0gF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <color key="textColor" name="MainColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="bAF-fb-woO">
+                            <rect key="frame" x="168.5" y="199" width="37" height="37"/>
+                            <color key="color" name="MainColor"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="nSY-Kg-L77" firstAttribute="top" secondItem="Jkj-xd-sAz" secondAttribute="bottom" constant="10" id="0tO-38-KX8"/>
+                        <constraint firstItem="bAF-fb-woO" firstAttribute="centerX" secondItem="J9A-1z-JDD" secondAttribute="centerX" id="2j1-vF-RGV"/>
+                        <constraint firstAttribute="bottom" secondItem="DXP-k2-fTn" secondAttribute="bottom" constant="20" id="3M5-Zt-2gi"/>
+                        <constraint firstItem="2Og-WB-tY8" firstAttribute="centerX" secondItem="1j5-sm-zC5" secondAttribute="centerX" id="9Jr-qV-dmC"/>
+                        <constraint firstItem="Mbd-M4-2Yf" firstAttribute="top" secondItem="2Og-WB-tY8" secondAttribute="bottom" constant="15" id="9hT-iG-Jti"/>
+                        <constraint firstAttribute="trailing" secondItem="DXP-k2-fTn" secondAttribute="trailing" constant="20" id="Guw-tH-KDe"/>
+                        <constraint firstItem="bAF-fb-woO" firstAttribute="centerX" secondItem="1j5-sm-zC5" secondAttribute="centerX" id="Hnx-hI-0aV"/>
+                        <constraint firstItem="Jkj-xd-sAz" firstAttribute="top" secondItem="J9A-1z-JDD" secondAttribute="bottom" constant="20" id="LNH-Eh-Npu"/>
+                        <constraint firstItem="DXP-k2-fTn" firstAttribute="centerX" secondItem="1j5-sm-zC5" secondAttribute="centerX" id="OEN-XI-EGi"/>
+                        <constraint firstItem="J9A-1z-JDD" firstAttribute="centerX" secondItem="Mbd-M4-2Yf" secondAttribute="centerX" id="Pi0-R3-Iqj"/>
+                        <constraint firstItem="2Og-WB-tY8" firstAttribute="top" secondItem="1j5-sm-zC5" secondAttribute="top" constant="20" id="cC3-gQ-N5M"/>
+                        <constraint firstItem="J9A-1z-JDD" firstAttribute="top" secondItem="Mbd-M4-2Yf" secondAttribute="bottom" constant="20" id="cGd-bi-tog"/>
+                        <constraint firstItem="Mbd-M4-2Yf" firstAttribute="centerX" secondItem="2Og-WB-tY8" secondAttribute="centerX" id="gLS-VK-Bdj"/>
+                        <constraint firstItem="DXP-k2-fTn" firstAttribute="leading" secondItem="1j5-sm-zC5" secondAttribute="leading" constant="20" id="nv9-qD-eJL"/>
+                        <constraint firstItem="nSY-Kg-L77" firstAttribute="centerX" secondItem="1j5-sm-zC5" secondAttribute="centerX" id="p2A-45-G9J"/>
+                        <constraint firstItem="Jkj-xd-sAz" firstAttribute="centerX" secondItem="J9A-1z-JDD" secondAttribute="centerX" id="s0x-gz-gy5"/>
+                        <constraint firstItem="DXP-k2-fTn" firstAttribute="top" secondItem="nSY-Kg-L77" secondAttribute="bottom" constant="20" id="ulU-kF-A6L"/>
+                        <constraint firstItem="bAF-fb-woO" firstAttribute="centerY" secondItem="1j5-sm-zC5" secondAttribute="centerY" id="wry-7V-RMw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1j5-sm-zC5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Fx-93-3g6"/>
+                <constraint firstItem="1j5-sm-zC5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0vI-1k-p8A"/>
+                <constraint firstItem="Hxy-Zo-rDU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Jv-xH-yc1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1j5-sm-zC5" secondAttribute="trailing" constant="20" id="CbK-nn-aJO"/>
+                <constraint firstAttribute="bottom" secondItem="Hxy-Zo-rDU" secondAttribute="bottom" id="Vf4-ui-2da"/>
+                <constraint firstItem="Hxy-Zo-rDU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hq8-i2-aHe"/>
+                <constraint firstItem="Hxy-Zo-rDU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mks-GX-VP3"/>
+                <constraint firstItem="1j5-sm-zC5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zOV-zu-MSh"/>
+            </constraints>
+            <point key="canvasLocation" x="-2101.449275362319" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Component 633 – 1-1" width="33" height="33"/>
+        <image name="delivery_man" width="512" height="512"/>
+        <image name="freepik--Character--inject-34" width="190" height="184.5"/>
+        <image name="login_bg_2" width="720" height="1280"/>
+        <namedColor name="MainColor">
+            <color red="0.50999999046325684" green="0.14499999582767487" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

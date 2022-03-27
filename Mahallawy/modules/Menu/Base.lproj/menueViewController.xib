@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Light.ttf">
+            <string>Cairo-Light</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="menueViewController" customModule="Mahallawy___محلاوي" customModuleProvider="target">
+            <connections>
+                <outlet property="editProfileBtn" destination="q8x-EP-ZDd" id="c3D-4M-RS4"/>
+                <outlet property="imageOfUser" destination="zT8-Jc-wcY" id="O5b-we-HnL"/>
+                <outlet property="menuTableView" destination="Wyh-To-TQp" id="lni-5M-vXo"/>
+                <outlet property="nameLbl" destination="uKl-rF-o9K" id="tbT-GR-lzO"/>
+                <outlet property="numberOfAdds" destination="xeY-ZI-JkV" id="IrH-7G-drG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpE-VX-Ch7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="232.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UMI-NF-Neu">
+                            <rect key="frame" x="142" y="152" width="130" height="70.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="زائر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKl-rF-o9K">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="22"/>
+                                    </variation>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="٠ اعلان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeY-ZI-JkV">
+                                    <rect key="frame" x="0.0" y="21" width="130" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Cairo-Light" family="Cairo" pointSize="20"/>
+                                    </variation>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8x-EP-ZDd">
+                                    <rect key="frame" x="0.0" y="38.5" width="130" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="تعديل الملف الشخصي">
+                                        <color key="titleColor" red="0.0" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="editProfile:" destination="-1" eventType="touchUpInside" id="Uy8-dj-Wgd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogo" translatesAutoresizingMaskIntoConstraints="NO" id="zT8-Jc-wcY">
+                            <rect key="frame" x="157" y="44" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="OlE-9z-E5i"/>
+                                <constraint firstAttribute="width" constant="100" id="mbv-6z-Ilk"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UMI-NF-Neu" secondAttribute="bottom" constant="10" id="1j0-W2-qyT"/>
+                        <constraint firstItem="UMI-NF-Neu" firstAttribute="centerX" secondItem="mpE-VX-Ch7" secondAttribute="centerX" id="BZH-95-Vm1"/>
+                        <constraint firstItem="zT8-Jc-wcY" firstAttribute="centerX" secondItem="mpE-VX-Ch7" secondAttribute="centerX" id="N5x-aq-mHP"/>
+                        <constraint firstItem="UMI-NF-Neu" firstAttribute="top" secondItem="zT8-Jc-wcY" secondAttribute="bottom" constant="8" symbolic="YES" id="t7h-eh-6kU"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wyh-To-TQp">
+                    <rect key="frame" x="0.0" y="232.5" width="414" height="663.5"/>
+                    <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mpE-VX-Ch7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1ih-c6-TUb"/>
+                <constraint firstItem="mpE-VX-Ch7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="57N-hd-1JI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wyh-To-TQp" secondAttribute="trailing" id="Iud-F4-qnx"/>
+                <constraint firstItem="Wyh-To-TQp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Khj-3M-70Y"/>
+                <constraint firstItem="Wyh-To-TQp" firstAttribute="top" secondItem="mpE-VX-Ch7" secondAttribute="bottom" id="Lo3-d0-qtx"/>
+                <constraint firstItem="zT8-Jc-wcY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fWw-Qa-fg6"/>
+                <constraint firstItem="mpE-VX-Ch7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nNa-QI-cUU"/>
+                <constraint firstAttribute="bottom" secondItem="Wyh-To-TQp" secondAttribute="bottom" id="t2n-TC-hLR"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applogo" width="197" height="218"/>
+    </resources>
+</document>

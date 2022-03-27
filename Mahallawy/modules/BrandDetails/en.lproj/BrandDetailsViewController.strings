@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "084-YN-1Pv"; */
+"084-YN-1Pv.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7da-Mv-Wr2"; */
+"7da-Mv-Wr2.text" = "Label";
+
+/* Class = "UILabel"; text = "مواعيد العمل"; ObjectID = "9so-Vr-zo6"; */
+"9so-Vr-zo6.text" = "مواعيد العمل";
+
+/* Class = "UILabel"; text = "اضافة للمفضلة"; ObjectID = "9t5-Eg-w8d"; */
+"9t5-Eg-w8d.text" = "اضافة للمفضلة";
+
+/* Class = "UIButton"; normalTitle = "(اضف تقيمك)"; ObjectID = "FLC-pi-clJ"; */
+"FLC-pi-clJ.normalTitle" = "(اضف تقيمك)";
+
+/* Class = "UILabel"; text = "القسم"; ObjectID = "N2n-EG-EwA"; */
+"N2n-EG-EwA.text" = "القسم";
+
+/* Class = "UILabel"; text = "عنوان تفصيلي"; ObjectID = "UKS-By-7uZ"; */
+"UKS-By-7uZ.text" = "عنوان تفصيلي";
+
+/* Class = "UILabel"; text = "اتصال بنا"; ObjectID = "V8t-B9-dfk"; */
+"V8t-B9-dfk.text" = "اتصال بنا";
+
+/* Class = "UILabel"; text = "تقيم المحل"; ObjectID = "dfg-1P-tRN"; */
+"dfg-1P-tRN.text" = "تقيم المحل";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kKC-qB-YO8"; */
+"kKC-qB-YO8.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rvu-OV-Y0i"; */
+"rvu-OV-Y0i.text" = "Label";
+
+/* Class = "UILabel"; text = "اضف تقيمك"; ObjectID = "vlz-2q-4vF"; */
+"vlz-2q-4vF.text" = "اضف تقيمك";
+
+/* Class = "UIButton"; normalTitle = "تقيم"; ObjectID = "xsx-he-aIv"; */
+"xsx-he-aIv.normalTitle" = "تقيم";
+
+/* Class = "UILabel"; text = "اعثر علينا"; ObjectID = "yzn-Fz-kXp"; */
+"yzn-Fz-kXp.text" = "اعثر علينا";

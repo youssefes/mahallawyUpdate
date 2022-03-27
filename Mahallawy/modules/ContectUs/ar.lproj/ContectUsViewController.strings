@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "الاسم بالكامل"; ObjectID = "DWT-FH-q0L"; */
+"DWT-FH-q0L.placeholder" = "الاسم بالكامل";
+
+/* Class = "UITextField"; placeholder = "رقم الواتساب"; ObjectID = "Ep7-3H-fhd"; */
+"Ep7-3H-fhd.placeholder" = "رقم الواتساب";
+
+/* Class = "UILabel"; text = "او"; ObjectID = "U1L-p4-Fm4"; */
+"U1L-p4-Fm4.text" = "او";
+
+/* Class = "UILabel"; text = "support@mahalawy.com - sales@@mahalawy.com"; ObjectID = "c1K-8b-YUv"; */
+"c1K-8b-YUv.text" = "support@mahalawy.com - sales@mahalawy.com";
+
+/* Class = "UILabel"; text = "يسعدنا ❤️ مساعدتك"; ObjectID = "oaB-N7-8uf"; */
+"oaB-N7-8uf.text" = "يسعدنا ❤️ مساعدتك";
+
+/* Class = "UIButton"; normalTitle = "ارسال"; ObjectID = "r4O-e1-ozJ"; */
+"r4O-e1-ozJ.normalTitle" = "ارسال";
+
+/* Class = "UIButton"; normalTitle = "ارسال مباشرة عبر واتساب"; ObjectID = "zA7-Va-FkS"; */
+"zA7-Va-FkS.normalTitle" = "ارسال مباشرة عبر واتساب";
