@@ -86,16 +86,10 @@ class JobsVc: BaseWireFrame<JobsViewModel> {
             searchBar.rx.text.skip(2).bind { (filterText) in
                 guard let filterText = filterText , !filterText.isEmpty else {
                     self.isSearch = false
-                  
                     return
                 }
-                DispatchQueue.main.async {
-                    self.isSearch = true
-                   
-                }
+                self.isSearch = true
                 self.filterOfJobs = self.arrayOfJobs.filter({ $0.title!.lowercased().contains(filterText.lowercased())})
-                
-               
             }.disposed(by: self.disposePag)
             
             

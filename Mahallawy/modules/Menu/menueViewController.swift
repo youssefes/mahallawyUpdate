@@ -18,10 +18,10 @@ class menueViewController: BaseWireFrame<MyAddvertismentViewModel> {
     @IBOutlet weak var menuTableView: UITableView!
     let cellIdentifier = "menuTableViewCell"
     
-    var arrayOfElementInMenuOfNormal : [String] = ["طلبات التوصيل","طلباتي","السلة","أعلاناتي","المفضلة","نشر وظيفة","أكتشف","طلب مندوب توصيل", "تواصل معنا","من نحن"]
+var arrayOfElementInMenuOfNormal : [String] = ["طلبات التوصيل","طلباتي","السلة","أعلاناتي","المفضلة","نشر وظيفة","أكتشف","طلب مندوب توصيل","طلبات التوصيل", "تواصل معنا","من نحن"]
     var arrayOfElementInMenuOfOwner : [String] = ["طلباتي","المفضلة","أكتشف","أعلاناتي","نشر وظيفة","اضافة اعلان", "طلب مندوب توصيل","طلبات التوصيل","تواصل معنا","من نحن"]
     
-    var arrayOfElementInMenuOfNormalimages : [UIImage] = [#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "home_icon_nav"),#imageLiteral(resourceName: "Buy"), #imageLiteral(resourceName: "myads"),#imageLiteral(resourceName: "favurite"),#imageLiteral(resourceName: "add ads"),#imageLiteral(resourceName: "ic_search_white_24dp"),#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "contact-us"),#imageLiteral(resourceName: "aboutus"),#imageLiteral(resourceName: "login_icon")]
+    var arrayOfElementInMenuOfNormalimages : [UIImage] = [#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "home_icon_nav"),#imageLiteral(resourceName: "Buy"), #imageLiteral(resourceName: "myads"),#imageLiteral(resourceName: "favurite"),#imageLiteral(resourceName: "add ads"),#imageLiteral(resourceName: "ic_search_white_24dp"),#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "contact-us"),#imageLiteral(resourceName: "aboutus"),#imageLiteral(resourceName: "login_icon")]
     
     var arrayOfElementInMenuOfOwnerimages : [UIImage] = [#imageLiteral(resourceName: "home_icon_nav"),#imageLiteral(resourceName: "favurite"),#imageLiteral(resourceName: "ic_search_white_24dp"),#imageLiteral(resourceName: "myads"),#imageLiteral(resourceName: "add ads"),#imageLiteral(resourceName: "add ads"),#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "delivery-man"),#imageLiteral(resourceName: "contact-us"),#imageLiteral(resourceName: "aboutus"),#imageLiteral(resourceName: "login_icon")]
     
@@ -93,11 +93,14 @@ class menueViewController: BaseWireFrame<MyAddvertismentViewModel> {
                     }
                 }
             }else if userType == "2"{
-                ArrayOfVC =  [taiarOrders,Orders,Cart,favorites, addJob,explorVc,mywallet,contectUs,whoAreView,loginVc]
-                arrayOfElementInMenuOfNormal.remove(at: 5)
-                arrayOfElementInMenuOfNormalimages.remove(at: 5)
-                arrayOfElementInMenuOfNormalimages.insert(#imageLiteral(resourceName: "wallet"), at: 5)
-                arrayOfElementInMenuOfNormal.insert("محفظتي", at: 5)
+                ArrayOfVC =  [taiarOrders,Orders,Cart,myAddvertisment,favorites,addJob,explorVc, mywallet,contectUs ,whoAreView,loginVc]
+                arrayOfElementInMenuOfNormal.remove(at: 7)
+                arrayOfElementInMenuOfNormalimages.remove(at: 7)
+                arrayOfElementInMenuOfNormalimages.insert(#imageLiteral(resourceName: "wallet"), at: 7)
+                arrayOfElementInMenuOfNormal.insert("محفظتي", at: 7)
+                
+                arrayOfElementInMenuOfNormal.remove(at: 8)
+                arrayOfElementInMenuOfNormalimages.remove(at: 8)
                 editProfileBtn.isHidden = false
                 editProfileBtn.isHidden = false
                 numberOfAdds.isHidden = true
@@ -113,8 +116,8 @@ class menueViewController: BaseWireFrame<MyAddvertismentViewModel> {
                 let tairOrdersTitle = arrayOfElementInMenuOfNormal.removeFirst()
                 editProfileBtn.isHidden = true
                 numberOfAdds.isHidden = true
-                arrayOfElementInMenuOfNormal.insert(tairOrdersTitle, at: 5)
-                arrayOfElementInMenuOfNormalimages.insert(tairOrdersImage, at: 5)
+//                arrayOfElementInMenuOfNormal.insert(tairOrdersTitle, at: 5)
+//                arrayOfElementInMenuOfNormalimages.insert(tairOrdersImage, at: 5)
                 ArrayOfVC = [Orders,Cart,myAddvertisment,favorites,addJob,explorVc,OrderTaierViewController,taiarOrders,contectUs,whoAreView,loginVc]
             }
         }else{
@@ -126,9 +129,9 @@ class menueViewController: BaseWireFrame<MyAddvertismentViewModel> {
             let tairOrdersTitle = arrayOfElementInMenuOfNormal.removeFirst()
             editProfileBtn.isHidden = true
             numberOfAdds.isHidden = true
-            arrayOfElementInMenuOfNormal.insert(tairOrdersTitle, at: 5)
-            arrayOfElementInMenuOfNormalimages.insert(tairOrdersImage, at: 5)
-            ArrayOfVC = [Orders,Cart,favorites,explorVc,OrderTaierViewController,taiarOrders,contectUs,whoAreView,loginVc]
+//            arrayOfElementInMenuOfNormal.insert(tairOrdersTitle, at: 5)
+//            arrayOfElementInMenuOfNormalimages.insert(tairOrdersImage, at: 5)
+            ArrayOfVC = [Orders,Cart,myAddvertisment,favorites, addJob,explorVc,OrderTaierViewController,taiarOrders,contectUs,whoAreView,loginVc]
            print("User Type Unkown")
         }
         
@@ -233,10 +236,11 @@ extension menueViewController : UITableViewDelegate, UITableViewDataSource{
             }
            
         }else{
+            print(indexPath.row)
             if ArrayOfVC.last == ArrayOfVC[indexPath.row]{
                 self.navigationController?.pushViewController(vc, animated: true)
             }else{
-                if indexPath.row == 7 {
+                if indexPath.row == 9 {
                     self.navigationController?.pushViewController(vc, animated: true)
                 }else{
                     showAlertTologein(massage: "من فضلك سجل الدخول ")
@@ -244,10 +248,6 @@ extension menueViewController : UITableViewDelegate, UITableViewDataSource{
                
             }
         }
-        
-     
-       
-       
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
